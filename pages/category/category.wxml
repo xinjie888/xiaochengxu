@@ -1,0 +1,153 @@
+<view class="container">
+  <view class="search">
+    <view class="input">
+      <icon type="search" size="12"/>
+      <text class="searchT">搜索京东商品</text>
+    </view>
+  </view>
+  <view id="nav">
+    <view class="nav">
+      <view wx:for="{{navList}}" class="{{index==num?'navItem1':'navItem'}}" data-index="{{index}}" bindtap="handleClick">
+        <text class="navT">{{item}}</text>
+      </view>
+    </view>
+  </view>
+  <view id="msg">
+    <view class="msg" wx:if="{{0==num}}">
+      <label class="title">热门搜索</label>
+      <view id="productList">
+        <view wx:for="{{rmssList}}" class="product">
+          <image src="{{item.src}}" class="img"></image>
+          <view  class="msgT">
+            <text>{{item.title}}</text>
+          </view>
+        </view>
+      </view>
+      <label class="title">男士热搜</label>
+      <view id="productList">
+        <view wx:for="{{nsrsList}}" class="product">
+          <image src="{{item.src}}" class="img"></image>
+          <view  class="msgT">
+            <text>{{item.title}}</text>
+          </view>
+        </view>
+      </view>
+      <label class="title">女士热搜</label>
+      <view id="productList">
+        <view wx:for="{{vsrsList}}" class="product">
+          <image src="{{item.src}}" class="img"></image>
+          <view  class="msgT">
+            <text>{{item.title}}</text>
+          </view>
+        </view>
+      </view>
+      <label class="title">生活热搜</label>
+      <view id="productList">
+        <view wx:for="{{shrsList}}" class="product">
+          <image src="{{item.src}}" class="img"></image>
+          <view  class="msgT">
+            <text>{{item.title}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="msg" wx:if="{{1==num}}">
+      <label class="title">大牌手机</label>
+      <view id="productList">
+        <view wx:for="{{dpsjList}}" class="product">
+          <image src="{{item.src}}" class="img"></image>
+          <view  class="msgT">
+            <text>{{item.title}}</text>
+          </view>
+        </view>
+      </view>
+      <label class="title">热销推荐</label>
+      <view id="productList">
+        <view wx:for="{{rxtcList}}" class="product">
+          <image src="{{item.src}}" class="img"></image>
+          <view  class="msgT">
+            <text>{{item.title}}</text>
+          </view>
+        </view>
+      </view>
+      <label class="title">手机配件</label>
+      <view id="productList">
+        <view wx:for="{{sjpjList}}" class="product">
+          <image src="{{item.src}}" class="img"></image>
+          <view  class="msgT">
+            <text>{{item.title}}</text>
+          </view>
+        </view>
+      </view>
+      <label class="title">摄影摄像</label>
+      <view id="productList">
+        <view wx:for="{{sysxList}}" class="product">
+          <image src="{{item.src}}" class="img"></image>
+          <view  class="msgT">
+            <text>{{item.title}}</text>
+          </view>
+        </view>
+      </view>
+      <label class="title">智能设备</label>
+      <view id="productList">
+        <view wx:for="{{znsbList}}" class="product">
+          <image src="{{item.src}}" class="img"></image>
+          <view  class="msgT">
+            <text>{{item.title}}</text>
+          </view>
+        </view>
+      </view>
+      <label class="title">影音娱乐</label>
+      <view id="productList">
+        <view wx:for="{{yyylList}}" class="product">
+          <image src="{{item.src}}" class="img"></image>
+          <view  class="msgT">
+            <text>{{item.title}}</text>
+          </view>
+        </view>
+      </view>
+      <label class="title">电子教育</label>
+      <view id="productList">
+        <view wx:for="{{dzjyList}}" class="product">
+          <image src="{{item.src}}" class="img"></image>
+          <view  class="msgT">
+            <text>{{item.title}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="msg" wx:if="{{2==num}}">
+      <label class="title">热销品类</label>
+      <view id="productList">
+        <view wx:for="{{rxplList}}" class="product">
+          <image src="{{item.src}}" class="img"></image>
+          <view  class="msgT">
+            <text>{{item.title}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="msg" wx:if="{{3==num}}">
+      <label class="title">热销品类</label>
+      <view id="productList">
+        <view wx:for="{{xptxList}}" class="product">
+          <image src="{{item.src}}" class="img"></image>
+          <view  class="msgT">
+            <text>{{item.title}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="msg" wx:if="{{4==num}}">
+      <label class="title">大家电</label>
+      <view id="productList">
+        <view wx:for="{{djdList}}" class="product">
+          <image src="{{item.src}}" class="img"></image>
+          <view  class="msgT">
+            <text>{{item.title}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

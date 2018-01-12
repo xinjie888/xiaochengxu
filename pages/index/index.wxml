@@ -1,0 +1,103 @@
+<!--index.wxml-->
+<view>
+<scroll-view scroll-y="true" style="height:100vh;" bindscroll="scroll" scroll-top="{{scrollTop}}" class="container"  bind:touchstart="test0"  bind:touchmove="test">
+  <view class="{{scrollY>2?'search fixed':'search'}}">
+    <view id="search">
+      <label class="searchJD">JD</label>
+      <text class="searchT"> | </text>
+      <icon type="search" size="11"/> 
+      <text class="searchT">搜索喜欢的商品</text>
+    </view> 
+  </view>
+  <view class="swipe">
+    <image src="../images/jd3.jpg"></image>
+  </view>
+  <view class="nav">
+    <view wx:for="{{navList}}">
+      <image src="{{item.src}}" class="img"></image>
+      <label class="title">{{item.title}}</label>
+    </view>
+  </view>
+  <view class="main">
+    <view class="motif">
+      <image src="../images/z.png"></image>
+      <label>为你优选</label>
+    </view>
+    <view class="wnyxList">
+      <view wx:for="{{wnyxList}}">
+        <label class="biaoti">{{item.title}}</label>
+        <text class="msg">{{"“"+item.msg+"”"}}</text>
+        <image src="{{item.src}}"></image>
+      </view>
+      <view>
+        <image src="../images/wnyxd.png" class="wnyxd"></image>
+      </view>
+    </view>
+    <view class="{{scrollY>744?'fixed nav2':'nav2'}}">
+      <view wx:for="{{nav2List}}" class="{{index==num?'item1':'item2'}}" bindtap="handleClick" data-index="{{index}}">
+        <label>{{item.title}}</label>
+        <text>{{item.msg}}</text>
+        <view></view>
+      </view>
+    </view>
+    <view class="nav2list" wx:if="{{0==num}}">
+      <label>“ 精选一线大牌低价直降 ”</label>
+      <view wx:for="{{nav2list}}" class="product">
+        <view class="lf">
+          <label>
+            <text class="ziying" wx:if="{{item.ziying}}">{{item.ziying}}</text> 
+            {{item.title}}
+          </label>
+          <text class="price1">¥</text><text class="price2">{{item.price}}</text><text class="price1">.00</text>
+          <text class="youhui">{{item.priceCut}}</text><text class="youhui">{{item.discount}}</text>
+        </view>
+        <view class="productImg">
+          <image src="{{item.img}}"></image>
+        </view>
+        <view class="productDB">
+          <image class="productLogo" src="{{item.logo}}"></image>
+          <text class="productStore">{{item.store}}</text>
+          <image class="productTubiao" src="{{item.tubiao}}"></image>
+        </view>
+      </view>
+    </view>
+    <view class="nav2list" wx:if="{{1==num}}">
+      <label>“ 最具人气的TOP热销爆款 ”</label>
+      <view wx:for="{{rexiaoList}}" class="product">
+        <view class="lf">
+          <label>
+            <text class="ziying" wx:if="{{item.ziying}}">{{item.ziying}}</text> 
+            {{item.title}}
+          </label>
+          <text class="price1">¥</text><text class="price2">{{item.price}}</text><text class="price1">.00</text>
+          <text class="youhui">{{item.priceCut}}</text><text class="youhui">{{item.discount}}</text>
+        </view>
+        <view class="productImg">
+          <image src="{{item.img}}"></image>
+        </view>
+        <view class="productDB">
+          <image class="rxt" src="{{item.logo}}"></image>
+          <text class="productStore">{{item.store}}</text>
+          <image class="productTubiao" src="{{item.tubiao}}"></image>
+        </view>
+      </view>
+    </view>
+    <view class="nav2list" wx:if="{{2==num}}">
+      <label>“ 大家都在买的高口碑好货 ”</label>
+      <view wx:for="{{haohuoList}}" class="product clear">
+        <view class="lf">
+          <label>
+            <text class="ziying" wx:if="{{item.ziying}}">{{item.ziying}}</text> 
+            {{item.title}}
+          </label>
+          <text class="price1">¥</text><text class="price2">{{item.price}}</text><text class="price1">.00</text>
+          <text class="youhui">{{item.haoping}}</text><text class="youhui">{{item.discount}}</text>
+        </view>
+        <view class="productImg">
+          <image src="{{item.img}}"></image>
+        </view> 
+      </view>
+    </view>
+  </view>
+</scroll-view>
+</view>

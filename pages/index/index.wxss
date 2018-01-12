@@ -1,0 +1,267 @@
+/**index.wxss**/
+.container{
+  background: #f4f4f4;
+  position: relative;
+  padding-bottom: 25rpx;
+}
+.clear:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+#search{
+  width: 90%;
+  height: 25px;
+  margin: 0 auto;
+  border-radius: 12px;
+  background: #f4f4f4;
+  line-height: 25px;
+}
+.searchJD{
+  font-weight: 700;
+  color: red;
+  margin-left: 13px;
+}
+.searchT{
+  font-size: 13px;
+  color: #e0e0e0;
+  margin: 0 7px 0 7px; 
+}
+.search{
+  width: 750rpx;
+  padding: 8px 0;
+  box-sizing: border-box;
+  position:absolute;
+  top:0;
+}
+.search1{
+  width: 750rpx;
+  padding: 8px 0;
+  box-sizing: border-box;
+}
+.swipe{
+  width: 750rpx;
+  height: 350rpx;
+  background: red;
+}
+.swipe image{
+  width: 750rpx;
+  height: 350rpx;
+}
+.nav{
+  width: 100%;
+  padding-top: 40rpx;
+  box-sizing: border-box;
+  background: #fff;
+  margin-bottom: 25rpx;
+  text-align: center;
+}
+.nav view{
+  width: 140rpx;
+  height: 170rpx;
+  display: inline-block;
+  text-align: center;
+}
+.img{
+  width: 90rpx;
+  height: 90rpx;
+  display: block;
+  margin: auto;
+}
+.nav .title{
+  font-size: 25rpx;
+  color: #404040;
+}
+.motif{
+  text-align: center;
+  font-size: 40rpx;
+  font-weight: 600;
+  background: #fff;
+  padding: 40rpx 0;
+}
+.motif image{
+  width: 50rpx;
+  height: 50rpx;
+  vertical-align: bottom;
+}
+.wnyxList{
+  background: #fff;
+  text-align: center;
+  margin-bottom: 25rpx;
+}
+.wnyxList view{
+  width: 32%;
+  height: 300rpx;
+  display: inline-block;
+  padding: 20rpx 0;
+}
+.biaoti{
+  font-weight: 600;
+  font-size: 35rpx;
+  display: block;
+}
+.msg{
+  font-size: 25rpx;
+  display: block;
+  line-height: 45rpx;
+  color: red;
+}
+.wnyxList view image{
+  width: 80%;
+  height: 208rpx;
+}
+.wnyxList view .wnyxd{
+  width: 85%;
+  height: 100%;
+}
+.nav2{
+  width: 100%;
+  height: 100rpx;
+  background: #fff;
+  text-align: center;
+}
+.fixed{
+  background: #fff;
+  position:fixed;
+  top:0;
+}
+.item1{
+   width: 33%;
+   display: inline-block;
+   padding-top: 18rpx;
+}
+.item2{
+   width: 33%;
+   display: inline-block;
+   padding-top: 18rpx;
+   opacity: .6;
+}
+.nav2 view label{
+  display: block;
+  font-size: 35rpx;
+  font-weight: 600;
+  line-height: 35rpx;
+}
+.nav2 view text{
+  width: 100%;
+  display: block;
+  font-size: 25rpx;
+  line-height: 43rpx;
+  margin: 4rpx;
+}
+.nav2 .item1 view{
+  width: 37rpx;
+  height: 2px;
+  background: #000;
+  margin: auto;
+}
+.nav2list{
+  text-align: center;
+}
+.nav2list label{
+  font-size: 25rpx;
+  color: #aaa;
+  line-height: 75rpx;
+}
+.product{
+  background: #fff;
+  padding-top: 20rpx;
+  margin: 0 30rpx 20rpx 30rpx;
+  clear: both;
+}
+.lf{
+  width: 425rpx;
+  height: 245rpx;
+  text-align: left;
+  float: left;
+  box-sizing: border-box;
+  padding-top: 20rpx;
+  padding-left: 35rpx;
+}
+.lf label{
+  display: -webkit-box;
+  width: 100%;
+  height: 90rpx;
+  color: #000;
+  font-weight: 600;
+  font-size: 30rpx;
+  line-height: 45rpx;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 40rpx;
+}
+.price1{
+  font-size: 25rpx;
+  font-weight: 600;
+  color: red;
+}
+.price2{
+  font-size: 40rpx;
+  font-weight: 600;
+  color: red;
+}
+.youhui{
+  display: inline-block;
+  font-size: 22rpx;
+  line-height: 40rpx;
+  color: red;
+  padding: 0 10rpx;
+  background: #f4f4f4;
+  margin-left: 10rpx;
+  border-radius: 15rpx;
+  border-bottom-left-radius: 0;
+}
+.productImg{
+  width: 240rpx;
+  height: 240rpx;
+  float: right;
+  padding-right: 25rpx;
+}
+.productImg image{
+  width: 240rpx;
+  height: 240rpx;
+  display: block;
+}
+.productDB{
+  width:93%;
+  height: 100rpx;
+  clear: both;
+  border-top: 1px dashed #eee;
+  line-height: 100rpx;
+  margin: auto;
+}
+.productLogo{
+  width: 30%;
+  height: 60%;
+  float: left;
+  margin-top: 20rpx;
+}
+.productStore{
+  font-size: 25rpx;
+  float: left;
+  margin-left: 30rpx;
+}
+.productTubiao{
+  width: 20rpx;
+  height: 30rpx;
+  float: right;
+  padding-top: 35rpx;
+}
+.ziying{
+  font-size: 23rpx;
+  background: red;
+  color: #fff;
+  border-radius: 5rpx;
+  display: inline-block;
+  line-height: 30rpx;
+  padding: 0 8rpx;
+}
+.rxt{
+  width: 40rpx;
+  height: 40rpx;
+  float: left;
+  margin-top: 30rpx;
+}
